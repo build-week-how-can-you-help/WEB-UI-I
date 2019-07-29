@@ -1,27 +1,42 @@
-.transition (@property: all, @duration: 300ms, @animate: linear, @delay:0s) {
-	transition: @property @duration @animate @delay;
-}
-.transform (@value) {
-	transform: @value;
-	-webkit-transform: @value;
-	-moz-transform: @value;
-	-o-transform: @value;
-	-ms-transform: @value;
+// Mixins Here
+.flex-align (@dir: column, @align: center) {
+    display: flex;
+    flex-direction: @dir;
+    align-items: @align;
 }
 
-// Placeholder Mixins
+.flex-just (@dir: row, @just: center) {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @just;
+}
 
-// .placeholder {
-// 	&.placeholder {
-// 		@content;
-// 	}
-// 	&:-moz-placeholder {
-// 		@content;
-// 	}
-// 	&::-moz-placeholder {
-// 		@content;
-// 	}
-// 	&::-webkit-input-placeholder {
-// 		@content;
-// 	}
-// }
+.base-button (@bgcolor, @fontcolor) {
+    border-radius: 10px;
+    width: 30%;
+    border: none;
+    height: 40px;
+    font-size: 1.6rem;
+    background: @bgcolor;
+    color: @fontcolor;
+
+    &:hover {
+        background: @porcelain;
+        color: @btn-bg-color;
+        .spinny(360deg, 3s);
+    }
+}
+
+.mobile-pic () {
+    width: 90%;
+    align-content: center;
+}
+
+.tab-pic () {
+    padding: 0 15px;
+}
+
+.spinny (@deg, @time) {
+    transform: rotate(@deg);
+    transition: transform @time;
+}
