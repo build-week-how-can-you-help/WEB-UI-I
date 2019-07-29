@@ -1,7 +1,10 @@
 
 
 .bancontainer {
-	.flex-align(column, space-around);
+	// .flex-align(column, center);
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
 	
 	// flex-wrap: wrap;
 	// background-repeat: no-repeat;
@@ -22,11 +25,13 @@
 		.container {
 			display: flex;
 			flex-direction: column;
+			align-self: center;
+			
 			
 			// .flex-align(column, center);
 			// flex-wrap: wrap;
 			width: 40%;
-			align-self: center;
+			// align-self: space-around;
 			// display: flex;
 			// justify-content: center;
 			.upper_text {
@@ -40,6 +45,15 @@
 			p {
 				color: @links-color;
 				align-self: center;
+				text-align: center;
+			}
+
+			.button {
+				button {
+					.base-button (@cta-color, @primary-color) {
+					
+					}
+				}
 			}
 			
 		}
