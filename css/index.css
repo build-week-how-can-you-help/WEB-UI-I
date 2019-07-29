@@ -152,6 +152,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 html,
 body {
@@ -182,18 +183,29 @@ p {
 nav {
   display: flex;
   justify-content: flex-end;
-  opacity: 1;
+  height: 50px;
   width: 100%;
   background: #FFF369;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+  }
 }
 nav .navcontainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  width: 50%;
+  justify-content: space-between;
+  width: 20%;
   margin: 10px;
 }
+@media (max-width: 500px) {
+  nav .navcontainer {
+    width: 100%;
+  }
+}
 nav .navcontainer a {
+  justify-content: space-between;
   font-size: 2rem;
   text-decoration: none;
   color: #666666;
@@ -201,8 +213,32 @@ nav .navcontainer a {
 .bancontainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 100px 0 0 0;
-  height: 200px;
+  align-items: space-around;
+  height: 900px;
+  background-size: cover;
+  background-color: gray;
+  background-blend-mode: soft-light;
+}
+.bancontainer .container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-self: center;
+}
+.bancontainer .container .upper_text {
+  color: #0093ff;
+  align-self: center;
+}
+.bancontainer .container h2 {
+  color: #0093ff;
+  align-self: center;
+}
+.bancontainer .container p {
+  color: #0093ff;
+  align-self: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #FFF369;
 }

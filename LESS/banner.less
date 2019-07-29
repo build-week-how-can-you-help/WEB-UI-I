@@ -1,11 +1,55 @@
 
 
 .bancontainer {
-	.flex-align(column, center);
-	flex-wrap: wrap;
-	padding: 100px 0 0 0;
-	height: 200px;
+	.flex-align(column, space-around);
+	
+	// flex-wrap: wrap;
+	// background-repeat: no-repeat;
+	// padding: 100px 0 0 0;
+	height: 900px;
+	// background-color: @primary-color2;
+	background-size: cover;
+	background-color: gray;
+	background-blend-mode: soft-light;
+
+	// .banner_inner {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	padding: 8%;
+		
+		
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			
+			// .flex-align(column, center);
+			// flex-wrap: wrap;
+			width: 40%;
+			align-self: center;
+			// display: flex;
+			// justify-content: center;
+			.upper_text {
+				color: @links-color;
+				align-self: center;
+			}
+			h2 {
+				color: @links-color;
+				align-self: center;
+			}
+			p {
+				color: @links-color;
+				align-self: center;
+			}
+			
+		}
+}
+
+	
+
+	
 
 	
 	
-}
+
+
