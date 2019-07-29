@@ -1,0 +1,27 @@
+.transition (@property: all, @duration: 300ms, @animate: linear, @delay:0s) {
+	transition: @property @duration @animate @delay;
+}
+.transform (@value) {
+	transform: @value;
+	-webkit-transform: @value;
+	-moz-transform: @value;
+	-o-transform: @value;
+	-ms-transform: @value;
+}
+
+// Placeholder Mixins
+
+// .placeholder {
+// 	&.placeholder {
+// 		@content;
+// 	}
+// 	&:-moz-placeholder {
+// 		@content;
+// 	}
+// 	&::-moz-placeholder {
+// 		@content;
+// 	}
+// 	&::-webkit-input-placeholder {
+// 		@content;
+// 	}
+// }
