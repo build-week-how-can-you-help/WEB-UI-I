@@ -1,0 +1,121 @@
+
+
+.bancontainer {
+
+	
+
+	@media @phone {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		height: 75%;
+		width: 100%;
+		background-size: 100%;
+	}
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	padding: 15% 0 0 0;
+	height: 700px;
+	background-size: cover;
+	background-color: gray;
+	background-blend-mode: soft-light;
+
+	.container {
+
+		@media @phone {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 40% 0 0 0;
+			width: 100%;
+				
+		}
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		width: 40%;
+
+		h1 {
+			@media @phone {
+				width: 100%;
+				text-align: center;
+			}
+			margin: 0 0 2% 0;
+			color: @links-color;
+			align-self: center;
+		}
+		h2 {
+
+			@media @tablet {
+				text-align: center;
+			}
+			@media @phone {
+				width: 100%;
+				text-align: center;
+			}
+			margin: 0 0 2% 0;
+			color: @links-color;
+			align-self: center;
+		}
+		p {
+			@media @phone {
+				width: 100%;
+			}
+			margin: 0 0 2% 0;
+			color: white;
+			align-self: center;
+			text-align: center;
+		}
+
+		.cta-button {
+			@media @phone {
+				width: 100%;
+
+			}
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			button {
+
+				@media @tablet {
+					height: auto;
+					width: 60%;
+				}
+
+				@media @phone {
+					width: 50%;
+					height: auto;
+				}
+				
+				border-radius: 10px;
+				width: 50%;
+				height: 45px;
+				font-size: 1.8rem;
+				background: @cta-color;
+				color: @primary-color;
+				border: none;
+
+    			&:hover {
+       			 background: @primary-color;
+       			 color: @cta-color;
+        		.spinny(360deg, 3s);
+    			}
+					
+					
+					
+			}
+		}
+			
+	}
+}
+
+	
+
+	
+
+	
+	
+
+

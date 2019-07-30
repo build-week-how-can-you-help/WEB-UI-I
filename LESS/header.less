@@ -1,0 +1,65 @@
+// Navigation code here
+nav{
+
+	@media @tablet {
+		display: flex;
+		justify-content: flex-end;
+		height: 50px;
+    	width: 100%;
+		background: @primary-color2;
+
+	}
+
+	@media @phone {
+		display: flex;
+		background: @primary-color2;
+		height: 10%;
+		width: 100%;
+		
+	}
+
+	
+
+	display: flex;
+	justify-content: flex-end;
+	height: 50px;
+    width: 100%;
+	background: @primary-color2;
+	
+	.navcontainer {
+
+		@media @tablet {
+			width: 30%;
+		}
+
+        @media @phone {
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+			
+		}
+		
+		
+        .flex-just(row, space-between);
+        width: 20%;
+        margin: 10px;
+        a {
+			@media @phone {
+				border: 1px solid black;
+				background: @cta-color;
+				width: 40%;
+				margin: 3% 0;
+				text-align: center;
+				font-size: 2rem;
+			}
+			justify-content: space-between;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @text-color;
+        }
+
+    }
+}
+
+
+    
