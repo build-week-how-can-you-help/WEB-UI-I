@@ -175,7 +175,7 @@ p {
 }
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 50px;
   width: 100%;
   background: #FFF369;
@@ -183,7 +183,7 @@ nav {
 @media (max-width: 800px) {
   nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 50px;
     width: 100%;
     background: #FFF369;
@@ -192,9 +192,20 @@ nav {
 @media (max-width: 500px) {
   nav {
     display: flex;
+    flex-direction: column;
     background: #FFF369;
     height: 10%;
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  nav .navlogo {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  nav .navlogo {
+    align-self: center;
   }
 }
 nav .navcontainer {
