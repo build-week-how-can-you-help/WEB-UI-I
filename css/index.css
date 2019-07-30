@@ -628,7 +628,6 @@ nav .navcontainer a {
   .biocontainer .bio2 .bio2pic {
     width: 30%;
     height: auto;
-    margin: 0 0 0 5%;
   }
 }
 @media (max-width: 500px) {
