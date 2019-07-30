@@ -3,10 +3,10 @@ nav{
 
 	@media @phone {
 		display: flex;
-		// flex-direction: column;
-		background: transparent;
-		height: 0px;
-		width: 100%
+		background: @bg-color;
+		height: 10%;
+		width: 100%;
+		// margin: 0 0 30% 0 ;
 	}
 
 	display: flex;
@@ -20,7 +20,8 @@ nav{
 			width: 100%;
 			flex-direction: column;
 			align-items: center;
-			// margin: 10% 0 0 0;
+			// background: @bg-color;
+			// margin: 0 0 30% 0;
         }
         .flex-just(row, space-between);
         width: 20%;
@@ -32,9 +33,10 @@ nav{
 				width: 40%;
 				margin: 3% 0;
 				text-align: center;
+				font-size: 2rem;
 			}
 			justify-content: space-between;
-            font-size: 2rem;
+            font-size: 1.6rem;
             text-decoration: none;
             color: @text-color;
         }

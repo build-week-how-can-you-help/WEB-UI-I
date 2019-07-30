@@ -1,0 +1,112 @@
+.biocontainer {
+
+    @media @phone {
+        width: 100%;
+        .flex-align();
+        margin: 2% 0 0 0;
+
+    }
+    .flex-align () {
+    }
+    width: 100%;
+    background: @bg-color;
+
+    .bio1 {
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 0 3% 0;
+            margin: 0 0 7% 0;
+            border-bottom: 1px solid @cta-color;
+            h2 {
+                text-align: center;
+                width: 100%;
+            }
+            p {
+                text-align: center;
+                width: 100%;
+                // margin: 0 0 7% 0;
+                
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 5% 5% 2% 5%;
+
+        .bio1pic {
+            @media @phone {
+                width: 100%;
+                // margin: 0 0 0 10%;
+                height: auto;
+                max-width: 100%;
+            }
+            width: 30%;
+        }
+
+        .bio1-text {
+            @media @phone {
+                width: 100%;
+            }
+            width: 40%;
+            align-self: center;
+        }
+
+        
+    }
+
+    .bio2 {
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 0 3% 0;
+            margin: 0 0 7% 0;
+            border-bottom: 1px solid @cta-color;
+            h2 {
+                text-align: center;
+                width: 100%;
+            }
+            p {
+                text-align: center;
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2% 5% 2% 5%;
+
+        .bio2pic {
+            @media @phone {
+                width: 100%;
+                align-items: center;
+                height: auto;
+                max-width: 100%;
+            }
+            width: 30%;
+        }
+
+        .bio2-text {
+            @media @phone {
+                width: 100%;
+                align-self: center;
+            }
+            width: 40%;
+            align-self: center;
+        }
+    }
+}

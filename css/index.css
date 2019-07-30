@@ -1,24 +1,5 @@
 /*font Variables*/
 /*Color Variables*/
-/*=================== fonts ====================*/
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v8/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v8/pxiByp8kv8JHgFVrLEj6Z1xlEA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -129,6 +110,11 @@ body {
   line-height: 1;
   width: 100%;
 }
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+}
 ol,
 ul {
   list-style: none;
@@ -157,25 +143,31 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #666666;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+  }
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #666666;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 h2 {
   font-size: 3.2rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 p {
   font-size: 1.6rem;
@@ -191,8 +183,8 @@ nav {
 @media (max-width: 500px) {
   nav {
     display: flex;
-    background: transparent;
-    height: 0px;
+    background: #eaf6ff;
+    height: 10%;
     width: 100%;
   }
 }
@@ -212,7 +204,7 @@ nav .navcontainer {
 }
 nav .navcontainer a {
   justify-content: space-between;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
   color: #666666;
 }
@@ -223,6 +215,7 @@ nav .navcontainer a {
     width: 40%;
     margin: 3% 0;
     text-align: center;
+    font-size: 2rem;
   }
 }
 .bancontainer {
@@ -325,9 +318,10 @@ nav .navcontainer a {
   transition: transform 3s;
 }
 .bottom-content {
-  margin: 5% 0 0 0;
+  padding: 5% 0 0 0;
   display: flex;
   justify-content: space-between;
+  background: #eaf6ff;
 }
 @media (max-width: 500px) {
   .bottom-content {
@@ -385,6 +379,114 @@ nav .navcontainer a {
 @media (max-width: 500px) {
   .bottom-content .bottom-text p {
     width: 100%;
+  }
+}
+.biocontainer {
+  width: 100%;
+  background: #eaf6ff;
+}
+@media (max-width: 500px) {
+  .biocontainer {
+    width: 100%;
+    margin: 2% 0 0 0;
+  }
+}
+.biocontainer .bio1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5% 5% 2% 5%;
+}
+@media (max-width: 500px) {
+  .biocontainer .bio1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 3% 0;
+    margin: 0 0 7% 0;
+    border-bottom: 1px solid #ff7600;
+  }
+  .biocontainer .bio1 h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .biocontainer .bio1 p {
+    text-align: center;
+    width: 100%;
+  }
+  .biocontainer .bio1 img {
+    width: 100%;
+    height: auto;
+  }
+}
+.biocontainer .bio1 .bio1pic {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .biocontainer .bio1 .bio1pic {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+.biocontainer .bio1 .bio1-text {
+  width: 40%;
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .biocontainer .bio1 .bio1-text {
+    width: 100%;
+  }
+}
+.biocontainer .bio2 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2% 5% 2% 5%;
+}
+@media (max-width: 500px) {
+  .biocontainer .bio2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 3% 0;
+    margin: 0 0 7% 0;
+    border-bottom: 1px solid #ff7600;
+  }
+  .biocontainer .bio2 h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .biocontainer .bio2 p {
+    text-align: center;
+    width: 100%;
+  }
+  .biocontainer .bio2 img {
+    width: 100%;
+    height: auto;
+  }
+}
+.biocontainer .bio2 .bio2pic {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .biocontainer .bio2 .bio2pic {
+    width: 100%;
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+  }
+}
+.biocontainer .bio2 .bio2-text {
+  width: 40%;
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .biocontainer .bio2 .bio2-text {
+    width: 100%;
+    align-self: center;
   }
 }
 footer {
