@@ -528,6 +528,7 @@ nav .navcontainer a {
   }
 }
 .biocontainer .bio1 .bio1-text {
+  margin: 0 20% 0 0;
   width: 40%;
   align-self: center;
 }
@@ -615,6 +616,7 @@ nav .navcontainer a {
   }
 }
 .biocontainer .bio2 .bio2-text {
+  margin: 0 0 0 20%;
   width: 40%;
   align-self: center;
 }
