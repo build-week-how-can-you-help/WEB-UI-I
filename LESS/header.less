@@ -3,7 +3,7 @@ nav{
 
 	@media @tablet {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
 		height: 50px;
     	width: 100%;
 		background: @primary-color2;
@@ -12,19 +12,35 @@ nav{
 
 	@media @phone {
 		display: flex;
+		flex-direction: column;
 		background: @primary-color2;
 		height: 10%;
 		width: 100%;
 		
 	}
 
-	
-
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	height: 50px;
     width: 100%;
 	background: @primary-color2;
+
+	.navlogo {
+
+		@media @tablet {
+			width: 45%;
+		}
+
+		@media @phone {
+
+			align-self: center;
+		}
+
+		
+		
+	}
+
+
 	
 	.navcontainer {
 
