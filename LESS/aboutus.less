@@ -1,5 +1,9 @@
 .biocontainer {
 
+    @media @tablet {
+        width: 100%;
+    }
+
     @media @phone {
         width: 100%;
         .flex-align();
@@ -12,6 +16,42 @@
     background: @bg-color;
 
     .bio1 {
+        justify-content: space-between;
+
+        h2 {
+            
+            text-align: center;
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+            width: 100%
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media @tablet {
+            width: 100%;
+            display: flex;
+            h2 {
+                text-align: center;
+                width: 100%;
+            }
+
+            p {
+                text-align: center;
+                width: 100%
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
         @media @phone {
             display: flex;
             flex-direction: column;
@@ -42,6 +82,12 @@
         padding: 5% 5% 2% 5%;
 
         .bio1pic {
+
+            @media @tablet {
+                width: 50%;
+                height: auto;
+                margin: 0 5% 0 0;
+            }
             @media @phone {
                 width: 100%;
                 // margin: 0 0 0 10%;
@@ -63,6 +109,43 @@
     }
 
     .bio2 {
+
+        justify-content: space-between;
+
+        h2 {
+            text-align: center;
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+            width: 100%
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media @tablet {
+            width: 100%;
+            display: flex;
+
+            h2 {
+                text-align: center;
+                width: 100%;
+            }
+
+            p {
+                text-align: center;
+                width: 100%
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
         @media @phone {
             display: flex;
             flex-direction: column;
@@ -91,6 +174,12 @@
         padding: 2% 5% 2% 5%;
 
         .bio2pic {
+
+            @media @tablet {
+                width: 50%;
+                height: auto;
+                margin: 0 0 0 5%;
+            }
             @media @phone {
                 width: 100%;
                 align-items: center;

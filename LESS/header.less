@@ -1,13 +1,24 @@
 // Navigation code here
 nav{
 
+	@media @tablet {
+		display: flex;
+		justify-content: flex-end;
+		height: 50px;
+    	width: 100%;
+		background: @primary-color2;
+
+	}
+
 	@media @phone {
 		display: flex;
-		background: @bg-color;
+		background: @primary-color2;
 		height: 10%;
 		width: 100%;
-		// margin: 0 0 30% 0 ;
+		
 	}
+
+	
 
 	display: flex;
 	justify-content: flex-end;
@@ -16,13 +27,19 @@ nav{
 	background: @primary-color2;
 	
 	.navcontainer {
+
+		@media @tablet {
+			width: 30%;
+		}
+
         @media @phone {
 			width: 100%;
 			flex-direction: column;
 			align-items: center;
-			// background: @bg-color;
-			// margin: 0 0 30% 0;
-        }
+			
+		}
+		
+		
         .flex-just(row, space-between);
         width: 20%;
         margin: 10px;

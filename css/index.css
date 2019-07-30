@@ -180,10 +180,19 @@ nav {
   width: 100%;
   background: #FFF369;
 }
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    width: 100%;
+    background: #FFF369;
+  }
+}
 @media (max-width: 500px) {
   nav {
     display: flex;
-    background: #eaf6ff;
+    background: #FFF369;
     height: 10%;
     width: 100%;
   }
@@ -194,6 +203,11 @@ nav .navcontainer {
   justify-content: space-between;
   width: 20%;
   margin: 10px;
+}
+@media (max-width: 800px) {
+  nav .navcontainer {
+    width: 30%;
+  }
 }
 @media (max-width: 500px) {
   nav .navcontainer {
@@ -270,6 +284,11 @@ nav .navcontainer a {
   color: #0093ff;
   align-self: center;
 }
+@media (max-width: 800px) {
+  .bancontainer .container h2 {
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
   .bancontainer .container h2 {
     width: 100%;
@@ -299,16 +318,23 @@ nav .navcontainer a {
 }
 .bancontainer .container .cta-button button {
   border-radius: 10px;
-  width: 30%;
+  width: 50%;
   height: 45px;
   font-size: 1.8rem;
   background: #ff7600;
   color: #FFCE00;
   border: none;
 }
+@media (max-width: 800px) {
+  .bancontainer .container .cta-button button {
+    height: auto;
+    width: 60%;
+  }
+}
 @media (max-width: 500px) {
   .bancontainer .container .cta-button button {
     width: 50%;
+    height: auto;
   }
 }
 .bancontainer .container .cta-button button:hover {
@@ -322,6 +348,11 @@ nav .navcontainer a {
   display: flex;
   justify-content: space-between;
   background: #eaf6ff;
+}
+@media (max-width: 800px) {
+  .bottom-content {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .bottom-content {
@@ -347,6 +378,12 @@ nav .navcontainer a {
   height: 10%;
   margin: 0 0 0 5%;
 }
+@media (max-width: 800px) {
+  .bottom-content .image {
+    height: auto;
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .bottom-content .image {
     display: none;
@@ -358,6 +395,11 @@ nav .navcontainer a {
   flex-direction: column;
   justify-content: flex-end;
 }
+@media (max-width: 800px) {
+  .bottom-content .bottom-text {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .bottom-content .bottom-text {
     width: 100%;
@@ -366,6 +408,12 @@ nav .navcontainer a {
 .bottom-content .bottom-text h1 {
   width: 45%;
   margin: 0 0 3% 0;
+}
+@media (max-width: 800px) {
+  .bottom-content .bottom-text h1 {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   .bottom-content .bottom-text h1 {
@@ -376,6 +424,12 @@ nav .navcontainer a {
 .bottom-content .bottom-text p {
   width: 30%;
 }
+@media (max-width: 800px) {
+  .bottom-content .bottom-text p {
+    width: 100%;
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
   .bottom-content .bottom-text p {
     width: 100%;
@@ -385,6 +439,11 @@ nav .navcontainer a {
   width: 100%;
   background: #eaf6ff;
 }
+@media (max-width: 800px) {
+  .biocontainer {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .biocontainer {
     width: 100%;
@@ -392,11 +451,42 @@ nav .navcontainer a {
   }
 }
 .biocontainer .bio1 {
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   padding: 5% 5% 2% 5%;
+}
+.biocontainer .bio1 h2 {
+  text-align: center;
+  width: 100%;
+}
+.biocontainer .bio1 p {
+  text-align: center;
+  width: 100%;
+}
+.biocontainer .bio1 img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 800px) {
+  .biocontainer .bio1 {
+    width: 100%;
+    display: flex;
+  }
+  .biocontainer .bio1 h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .biocontainer .bio1 p {
+    text-align: center;
+    width: 100%;
+  }
+  .biocontainer .bio1 img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 500px) {
   .biocontainer .bio1 {
@@ -423,6 +513,13 @@ nav .navcontainer a {
 .biocontainer .bio1 .bio1pic {
   width: 30%;
 }
+@media (max-width: 800px) {
+  .biocontainer .bio1 .bio1pic {
+    width: 50%;
+    height: auto;
+    margin: 0 5% 0 0;
+  }
+}
 @media (max-width: 500px) {
   .biocontainer .bio1 .bio1pic {
     width: 100%;
@@ -440,11 +537,42 @@ nav .navcontainer a {
   }
 }
 .biocontainer .bio2 {
+  justify-content: space-between;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   width: 100%;
   padding: 2% 5% 2% 5%;
+}
+.biocontainer .bio2 h2 {
+  text-align: center;
+  width: 100%;
+}
+.biocontainer .bio2 p {
+  text-align: center;
+  width: 100%;
+}
+.biocontainer .bio2 img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 800px) {
+  .biocontainer .bio2 {
+    width: 100%;
+    display: flex;
+  }
+  .biocontainer .bio2 h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .biocontainer .bio2 p {
+    text-align: center;
+    width: 100%;
+  }
+  .biocontainer .bio2 img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 500px) {
   .biocontainer .bio2 {
@@ -471,6 +599,13 @@ nav .navcontainer a {
 .biocontainer .bio2 .bio2pic {
   width: 30%;
 }
+@media (max-width: 800px) {
+  .biocontainer .bio2 .bio2pic {
+    width: 50%;
+    height: auto;
+    margin: 0 0 0 5%;
+  }
+}
 @media (max-width: 500px) {
   .biocontainer .bio2 .bio2pic {
     width: 100%;
@@ -493,4 +628,9 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #FFF369;
+}
+@media (max-width: 800px) {
+  footer {
+    width: 100%;
+  }
 }

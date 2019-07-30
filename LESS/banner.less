@@ -2,6 +2,8 @@
 
 .bancontainer {
 
+	
+
 	@media @phone {
 		padding: 0;
 		display: flex;
@@ -45,6 +47,10 @@
 			align-self: center;
 		}
 		h2 {
+
+			@media @tablet {
+				text-align: center;
+			}
 			@media @phone {
 				width: 100%;
 				text-align: center;
@@ -73,12 +79,18 @@
 			justify-content: center;
 			button {
 
+				@media @tablet {
+					height: auto;
+					width: 60%;
+				}
+
 				@media @phone {
 					width: 50%;
+					height: auto;
 				}
 				
 				border-radius: 10px;
-				width: 30%;
+				width: 50%;
 				height: 45px;
 				font-size: 1.8rem;
 				background: @cta-color;
