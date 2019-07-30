@@ -214,7 +214,7 @@ nav .navcontainer a {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  height: 900px;
+  height: 700px;
   background-size: cover;
   background-color: gray;
   background-blend-mode: soft-light;
@@ -225,7 +225,7 @@ nav .navcontainer a {
   align-self: center;
   width: 40%;
 }
-.bancontainer .container .upper_text {
+.bancontainer .container h1 {
   color: #0093ff;
   align-self: center;
 }
@@ -237,6 +237,26 @@ nav .navcontainer a {
   color: #0093ff;
   align-self: center;
   text-align: center;
+}
+.bancontainer .container .cta-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bancontainer .container .cta-button button {
+  border-radius: 10px;
+  width: 30%;
+  height: 45px;
+  font-size: 1.8rem;
+  background: #ff7600;
+  color: #FFCE00;
+  border: none;
+}
+.bancontainer .container .cta-button button:hover {
+  background: #FFCE00;
+  color: #ff7600;
+  transform: rotate(360deg);
+  transition: transform 3s;
 }
 footer {
   display: flex;

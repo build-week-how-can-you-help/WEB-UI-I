@@ -9,7 +9,7 @@
 	// flex-wrap: wrap;
 	// background-repeat: no-repeat;
 	// padding: 100px 0 0 0;
-	height: 900px;
+	height: 700px;
 	// background-color: @primary-color2;
 	background-size: cover;
 	background-color: gray;
@@ -34,7 +34,7 @@
 			// align-self: space-around;
 			// display: flex;
 			// justify-content: center;
-			.upper_text {
+			h1 {
 				color: @links-color;
 				align-self: center;
 			}
@@ -48,11 +48,29 @@
 				text-align: center;
 			}
 
-			.button {
+			.cta-button {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
 				button {
-					.base-button (@cta-color, @primary-color) {
 					
-					}
+					// align-self: center;
+						border-radius: 10px;
+    					width: 30%;
+    					height: 45px;
+    					font-size: 1.8rem;
+    					background: @cta-color;
+						color: @primary-color;
+						border: none;
+
+    					&:hover {
+       					 background: @primary-color;
+       					 color: @cta-color;
+        				.spinny(360deg, 3s);
+    					}
+					
+					
+					
 				}
 			}
 			
