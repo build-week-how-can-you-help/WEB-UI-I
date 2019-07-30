@@ -1,80 +1,99 @@
 
 
 .bancontainer {
-	// .flex-align(column, center);
+
+	@media @phone {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		height: 75%;
+		width: 100%;
+		background-size: 100%;
+	}
 	display: flex;
 	flex-direction: column;
 	align-content: flex-start;
-	
-	// flex-wrap: wrap;
-	// background-repeat: no-repeat;
-	// padding: 100px 0 0 0;
+	padding: 15% 0 0 0;
 	height: 700px;
-	// background-color: @primary-color2;
 	background-size: cover;
 	background-color: gray;
 	background-blend-mode: soft-light;
 
-	// .banner_inner {
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	padding: 8%;
-		
-		
+	.container {
 
-		.container {
+		@media @phone {
 			display: flex;
 			flex-direction: column;
-			align-self: center;
-			
-			
-			// .flex-align(column, center);
-			// flex-wrap: wrap;
-			width: 40%;
-			// align-self: space-around;
-			// display: flex;
-			// justify-content: center;
-			h1 {
-				color: @links-color;
-				align-self: center;
-			}
-			h2 {
-				color: @links-color;
-				align-self: center;
-			}
-			p {
-				color: @links-color;
-				align-self: center;
-				text-align: center;
-			}
-
-			.cta-button {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				button {
-					
-					// align-self: center;
-						border-radius: 10px;
-    					width: 30%;
-    					height: 45px;
-    					font-size: 1.8rem;
-    					background: @cta-color;
-						color: @primary-color;
-						border: none;
-
-    					&:hover {
-       					 background: @primary-color;
-       					 color: @cta-color;
-        				.spinny(360deg, 3s);
-    					}
-					
-					
-					
-				}
-			}
-			
+			align-items: center;
+			margin: 40% 0 0 0;
+			width: 100%;
+				
 		}
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		width: 40%;
+
+		h1 {
+			@media @phone {
+				width: 100%;
+			}
+			
+			color: @links-color;
+			align-self: center;
+		}
+		h2 {
+			@media @phone {
+				width: 100%;
+			}
+
+			color: @links-color;
+			align-self: center;
+		}
+		p {
+			@media @phone {
+				width: 100%;
+			}
+			color: white;
+			align-self: center;
+			text-align: center;
+		}
+
+		.cta-button {
+			@media @phone {
+				width: 100%;
+
+			}
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			button {
+
+				@media @phone {
+					width: 50%;
+				}
+				
+				border-radius: 10px;
+				width: 30%;
+				height: 45px;
+				font-size: 1.8rem;
+				background: @cta-color;
+				color: @primary-color;
+				border: none;
+
+    			&:hover {
+       			 background: @primary-color;
+       			 color: @cta-color;
+        		.spinny(360deg, 3s);
+    			}
+					
+					
+					
+			}
+		}
+			
+	}
 }
 
 	

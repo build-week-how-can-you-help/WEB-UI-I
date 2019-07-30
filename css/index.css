@@ -127,6 +127,7 @@ section {
 }
 body {
   line-height: 1;
+  width: 100%;
 }
 ol,
 ul {
@@ -189,6 +190,9 @@ nav {
 }
 @media (max-width: 500px) {
   nav {
+    display: flex;
+    background: transparent;
+    height: 0px;
     width: 100%;
   }
 }
@@ -202,6 +206,8 @@ nav .navcontainer {
 @media (max-width: 500px) {
   nav .navcontainer {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 nav .navcontainer a {
@@ -210,14 +216,35 @@ nav .navcontainer a {
   text-decoration: none;
   color: #666666;
 }
+@media (max-width: 500px) {
+  nav .navcontainer a {
+    border: 1px solid black;
+    background: #ff7600;
+    width: 40%;
+    margin: 3% 0;
+    text-align: center;
+  }
+}
 .bancontainer {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
+  padding: 15% 0 0 0;
   height: 700px;
   background-size: cover;
   background-color: gray;
   background-blend-mode: soft-light;
+}
+@media (max-width: 500px) {
+  .bancontainer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 75%;
+    width: 100%;
+    background-size: 100%;
+  }
 }
 .bancontainer .container {
   display: flex;
@@ -225,23 +252,52 @@ nav .navcontainer a {
   align-self: center;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .bancontainer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40% 0 0 0;
+    width: 100%;
+  }
+}
 .bancontainer .container h1 {
   color: #0093ff;
   align-self: center;
+}
+@media (max-width: 500px) {
+  .bancontainer .container h1 {
+    width: 100%;
+  }
 }
 .bancontainer .container h2 {
   color: #0093ff;
   align-self: center;
 }
+@media (max-width: 500px) {
+  .bancontainer .container h2 {
+    width: 100%;
+  }
+}
 .bancontainer .container p {
-  color: #0093ff;
+  color: white;
   align-self: center;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .bancontainer .container p {
+    width: 100%;
+  }
 }
 .bancontainer .container .cta-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .bancontainer .container .cta-button {
+    width: 100%;
+  }
 }
 .bancontainer .container .cta-button button {
   border-radius: 10px;
@@ -252,11 +308,79 @@ nav .navcontainer a {
   color: #FFCE00;
   border: none;
 }
+@media (max-width: 500px) {
+  .bancontainer .container .cta-button button {
+    width: 50%;
+  }
+}
 .bancontainer .container .cta-button button:hover {
   background: #FFCE00;
   color: #ff7600;
   transform: rotate(360deg);
   transition: transform 3s;
+}
+.bottom-content {
+  margin: 5% 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    margin: 1% 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.bottom-content .container {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .bottom-content .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+}
+.bottom-content .image {
+  width: 45%;
+  height: 10%;
+  margin: 0 0 0 5%;
+}
+@media (max-width: 500px) {
+  .bottom-content .image {
+    display: none;
+    width: 100%;
+  }
+}
+.bottom-content .bottom-text {
+  width: 45%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-text {
+    width: 100%;
+  }
+}
+.bottom-content .bottom-text h1 {
+  width: 45%;
+  margin: 0 0 3% 0;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-text h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+.bottom-content .bottom-text p {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-text p {
+    width: 100%;
+  }
 }
 footer {
   display: flex;
