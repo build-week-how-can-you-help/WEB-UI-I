@@ -262,24 +262,29 @@ nav .navcontainer a {
   }
 }
 .bancontainer .container h1 {
+  margin: 0 0 2% 0;
   color: #0093ff;
   align-self: center;
 }
 @media (max-width: 500px) {
   .bancontainer .container h1 {
     width: 100%;
+    text-align: center;
   }
 }
 .bancontainer .container h2 {
+  margin: 0 0 2% 0;
   color: #0093ff;
   align-self: center;
 }
 @media (max-width: 500px) {
   .bancontainer .container h2 {
     width: 100%;
+    text-align: center;
   }
 }
 .bancontainer .container p {
+  margin: 0 0 2% 0;
   color: white;
   align-self: center;
   text-align: center;
