@@ -209,9 +209,9 @@ nav .navcontainer {
   }
 }
 nav .navcontainer a {
+  color: #0093ff;
   font-size: 1.6rem;
   text-decoration: none;
-  color: #666666;
   height: 50%;
   text-align: center;
 }
@@ -669,6 +669,9 @@ footer .contact {
     word-wrap: break-word;
   }
 }
+footer .contact a {
+  font-size: 1.6rem;
+}
 footer .footernav {
   display: flex;
   justify-content: space-between;
@@ -683,7 +686,7 @@ footer .footernav {
 footer .footernav a {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #666666;
+  color: #0093ff;
   height: 50%;
   text-align: center;
 }
