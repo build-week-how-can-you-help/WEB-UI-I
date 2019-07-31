@@ -17,7 +17,6 @@
     background: @bg-color;
     width: 100%;
  
-
     .container {
         @media @phone {
             display: flex;
@@ -44,14 +43,14 @@
 
         img {
 
-            height: auto;
-            width: 80%;
-            
             @media @tablet {
                 height: auto;
                 width: 100%;
-            }
-        }
+            }//end media
+
+            height: auto;
+            width: 80%;
+        }//end img
 
         width: 45%;
         height: 10%;
@@ -97,7 +96,7 @@
                 width: 100%;
                 text-align: center;
             }//end media
-            // text-align: center;
+            
             width: 50%;     
         }//end p
     }//end .bottom-text    

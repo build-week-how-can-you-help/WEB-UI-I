@@ -18,22 +18,6 @@
     background: @bg-color;
 
     .bio1 {
-        
-
-        h2 {
-            text-align: center;
-            width: 100%;
-        }//end h2
-
-        p {
-            text-align: center;
-            width: 100%
-        }//end p
-
-        img {
-            width: 100%;
-            height: auto;
-        }//end img
 
         @media @tablet {
 
@@ -56,7 +40,7 @@
                 height: auto;
             }//end img
         }//end media
-        
+
         @media @phone {
             display: flex;
             flex-direction: column;
@@ -81,12 +65,20 @@
             }//end img
         }//end media
         
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 5% 5% 2% 5%;
+        h2 {
+            text-align: center;
+            width: 100%;
+        }//end h2
+
+        p {
+            text-align: center;
+            width: 100%
+        }//end p
+
+        img {
+            width: 100%;
+            height: auto;
+        }//end img
 
         .bio1pic {
 
@@ -120,28 +112,19 @@
             width: 40%;
             align-self: center;
         }//end .bio1-text
+
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 5% 5% 2% 5%;
     }//end .bio1
 
     .bio2 {
 
-        
-
-        h2 {
-            text-align: center;
-            width: 100%;
-        }//end h2
-
-        p {
-            text-align: center;
-            width: 100%
-        }//end p
-
-        img {
-            width: 100%;
-            height: auto;
-        }//end img
-
         @media @tablet {
+
             width: 100%;
             display: flex;
 
@@ -162,6 +145,7 @@
         }//end media
 
         @media @phone {
+
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -185,12 +169,23 @@
             }//end img
         }//end media
 
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 2% 5% 2% 5%;
+        h2 {
+
+            text-align: center;
+            width: 100%;
+        }//end h2
+
+        p {
+
+            text-align: center;
+            width: 100%
+        }//end p
+
+        img {
+
+            width: 100%;
+            height: auto;
+        }//end img
 
         .bio2pic {
 
@@ -226,5 +221,12 @@
             width: 40%;
             align-self: center;
         }//end .bio2-text
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2% 5% 2% 5%;
     }//end .bio2
 }//end .biocontainer
