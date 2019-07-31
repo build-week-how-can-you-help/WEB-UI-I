@@ -527,7 +527,7 @@ nav .navcontainer a {
   }
 }
 .biocontainer .bio1 .bio1-text {
-  margin: 0 0 0 0;
+  margin: 0;
   width: 40%;
   align-self: center;
 }
@@ -663,9 +663,6 @@ footer .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  footer .contact h3 {
-    text-align: left;
   }
   footer .contact p {
     word-wrap: break-word;
