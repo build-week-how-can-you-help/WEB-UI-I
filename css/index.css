@@ -202,8 +202,6 @@ nav .navcontainer {
   width: 25%;
 }
 @media (max-width: 500px) {
-}
-@media (max-width: 500px) and (max-width: 500px) {
   nav .navcontainer {
     width: 100%;
     flex-direction: column;
@@ -459,18 +457,6 @@ nav .navcontainer a {
   width: 100%;
   padding: 5% 5% 2% 5%;
 }
-.biocontainer .bio1 h2 {
-  text-align: center;
-  width: 100%;
-}
-.biocontainer .bio1 p {
-  text-align: center;
-  width: 100%;
-}
-.biocontainer .bio1 img {
-  width: 100%;
-  height: auto;
-}
 @media (max-width: 800px) {
   .biocontainer .bio1 {
     width: 100%;
@@ -511,6 +497,18 @@ nav .navcontainer a {
     width: 100%;
     height: auto;
   }
+}
+.biocontainer .bio1 h2 {
+  text-align: center;
+  width: 100%;
+}
+.biocontainer .bio1 p {
+  text-align: center;
+  width: 100%;
+}
+.biocontainer .bio1 img {
+  width: 100%;
+  height: auto;
 }
 .biocontainer .bio1 .bio1pic {
   width: 30%;
@@ -554,18 +552,6 @@ nav .navcontainer a {
   width: 100%;
   padding: 2% 5% 2% 5%;
 }
-.biocontainer .bio2 h2 {
-  text-align: center;
-  width: 100%;
-}
-.biocontainer .bio2 p {
-  text-align: center;
-  width: 100%;
-}
-.biocontainer .bio2 img {
-  width: 100%;
-  height: auto;
-}
 @media (max-width: 800px) {
   .biocontainer .bio2 {
     width: 100%;
@@ -605,6 +591,18 @@ nav .navcontainer a {
     width: 100%;
     height: auto;
   }
+}
+.biocontainer .bio2 h2 {
+  text-align: center;
+  width: 100%;
+}
+.biocontainer .bio2 p {
+  text-align: center;
+  width: 100%;
+}
+.biocontainer .bio2 img {
+  width: 100%;
+  height: auto;
 }
 .biocontainer .bio2 .bio2pic {
   width: 30%;
