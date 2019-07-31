@@ -468,7 +468,7 @@ nav .navcontainer a {
   }
 }
 .biocontainer .bio1 {
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -563,8 +563,8 @@ nav .navcontainer a {
   }
 }
 .biocontainer .bio2 {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   width: 100%;
