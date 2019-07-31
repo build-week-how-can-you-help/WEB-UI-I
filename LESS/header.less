@@ -1,82 +1,141 @@
 
-nav{
+// nav{
 
-	@media @tablet {
-		display: flex;
-		justify-content: space-between;
-		height: 50px;
-    	width: 100%;
-		background: @primary-color2;
-	}//end media
+// 	@media @tablet {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		height: 50px;
+//     	width: 100%;
+// 		background: @primary-color2;
+// 	}//end media
 
-	@media @phone {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background: @primary-color2;
-		height: 10%;
-		width: 100%;
-	}//end media
+// 	@media @phone {
+// 		display: flex;
+// 		flex-direction: column;
+// 		align-items: center;
+// 		background: @primary-color2;
+// 		height: 10%;
+// 		width: 100%;
+// 	}//end media
 
-	display: flex;
-	justify-content: space-between;
-	height: 50px;
-    width: 100%;
-	background: @primary-color2;
+// 	display: flex;
+// 	justify-content: space-between;
+// 	height: 50px;
+//     width: 100%;
+// 	background: @primary-color2;
 
-	.navlogo {
+// 	.navlogo {
 
-		@media @tablet {
-			width: 45%;
-		}//end media
+// 		@media @tablet {
+// 			width: 45%;
+// 		}//end media
 
-		@media @phone {
+// 		@media @phone {
 
-			width: 100%;
-            align-self: center;
-            height: auto;
-			max-width: 100%;
+// 			width: 100%;
+//             align-self: center;
+//             height: auto;
+// 			max-width: 100%;
 				
-			img {
-				width: 100%;
-				height: auto;
-			}//end img
-		}//end media		
-	}//end .navlogo
+// 			img {
 
-	.navcontainer {
+// 				@media @phone {
+// 					display: none;
+// 				}
+// 				width: 100%;
+// 				height: auto;
+// 			}//end img
+// 		}//end media		
+// 	}//end .navlogo
 
-		@media @tablet {
-			width: 30%;
-		}//end media
+// 	.navcontainer {
+
+// 		@media @tablet {
+// 			width: 30%;
+// 		}//end media
+
+		// @media @phone {
+		// 	width: 100%;
+		// 	flex-direction: column;
+		// 	align-items: center;
+		// }//end media
+			
+//         .flex-just(row, space-between);
+//         width: 20%;
+// 		align-self: center;
+		
+//         a {
+			// @media @phone {
+			// 	border: 1px solid black;
+			// 	background: @cta-color;
+			// 	width: 40%;
+			// 	margin: 3% 0;
+			// 	text-align: center;
+			// 	font-size: 2rem;
+			// }//end media
+			
+// 			justify-content: space-between;
+//             font-size: 1.6rem;
+//             text-decoration: none;
+// 			color: @text-color;	
+//         }//end a
+//     }// end .navcontainer
+// }//end nav
+
+nav {
+    @media @tablet {
+        width: 100%;
+    }//end media
+
+    @media @phone {
+        width: 100%;
+    }//end media
+
+    .navlogo {
+        width: 40%;
+    }
+
+    .navcontainer {
 
         @media @phone {
-			width: 100%;
-			flex-direction: column;
-			align-items: center;
-		}//end media
-			
-        .flex-just(row, space-between);
-        width: 20%;
-		margin: 10px;
-		
+            @media @phone {
+				width: 100%;
+				flex-direction: column;
+				align-items: center;
+			}//end media
+        }
+        
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        
         a {
+
 			@media @phone {
 				border: 1px solid black;
 				background: @cta-color;
 				width: 40%;
-				margin: 3% 0;
+				margin: 3% 0 3% 10%;
 				text-align: center;
 				font-size: 2rem;
+				align-self: flex-start;
 			}//end media
-			
-			justify-content: space-between;
+            
             font-size: 1.6rem;
             text-decoration: none;
-			color: @text-color;	
-        }//end a
-    }// end .navcontainer
-}//end nav
+            color: @text-color;
+            height: 50%;
+            text-align: center;
+            // padding: 5% 0 0 0;   
+        }
+        
+        width: 25%;
+    }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: @primary-color2;
+}//end footer
 
 
     

@@ -17,7 +17,7 @@
 	display: flex;
 	flex-direction: column;
 	align-content: flex-start;
-	padding: 15% 0 0 0;
+	padding: 0 0 0 0;
 	height: 700px;
 	background-size: cover;
 	background-color: gray;
@@ -39,32 +39,52 @@
 		align-self: center;
 		width: 40%;
 
-		h1 {
-			@media @phone {
-				width: 100%;
-				text-align: center;
-			}//end media
+		// h1 {
+		// 	@media @phone {
+		// 		width: 100%;
+		// 		text-align: center;
+		// 	}//end media
 
-			margin: 0 0 2% 0;
-			color: @links-color;
-			align-self: center;
-		}//end h1
+		// 	margin: 0 0 2% 0;
+		// 	color: @links-color;
+		// 	align-self: center;
+		// }//end h1
 
-		h2 {
+		// h2 {
+
+		// 	@media @tablet {
+		// 		text-align: center;
+		// 	}//end media
+
+		// 	@media @phone {
+		// 		width: 100%;
+		// 		text-align: center;
+		// 	}//end media
+
+		// 	margin: 0 0 2% 0;
+		// 	color: @links-color;
+		// 	align-self: center;
+		// }//end h2
+
+		img {
 
 			@media @tablet {
-				text-align: center;
-			}//end media
+				width: 100%;
+				align-self: center;
+			}
 
 			@media @phone {
-				width: 100%;
-				text-align: center;
-			}//end media
-
-			margin: 0 0 2% 0;
-			color: @links-color;
+				width: 70%;
+				height: auto;
+				margin: 0;
+			}
+			
+			margin: 2% 0;
+			width: 70%;
+			max-width: 100%;
+			height: auto;
 			align-self: center;
-		}//end h2
+		}
 		
 		p {
 			@media @phone {

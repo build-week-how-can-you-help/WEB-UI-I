@@ -2,6 +2,51 @@ footer {
     @media @tablet {
         width: 100%;
     }//end media
+
+    @media @phone {
+        width: 100%;
+    }//end media
+
+    .contact {
+        
+        @media @phone {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                word-wrap: break-word;
+            }
+        }
+        width: 40%;
+    }
+
+    .footernav {
+
+        @media @phone {
+            display: none;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        
+        a {
+            
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @text-color;
+            height: 50%;
+            text-align: center;
+            // padding: 5% 0 0 0;
+            
+            
+        }
+        
+        width: 25%;
+    }
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: @primary-color2;
