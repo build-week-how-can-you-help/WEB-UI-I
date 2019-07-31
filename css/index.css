@@ -188,6 +188,9 @@ nav {
   nav {
     width: 100%;
   }
+  nav .navlogo {
+    display: none;
+  }
 }
 nav .navlogo {
   width: 40%;
@@ -219,10 +222,10 @@ nav .navcontainer a {
     border: 1px solid black;
     background: #ff7600;
     width: 40%;
-    margin: 3% 0 3% 10%;
+    margin: 3% 0 3% 0;
     text-align: center;
     font-size: 2rem;
-    align-self: flex-start;
+    align-self: center;
   }
 }
 .bancontainer {
