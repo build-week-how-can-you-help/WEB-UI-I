@@ -197,7 +197,7 @@ nav .navlogo {
 }
 nav .navcontainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-self: center;
   width: 25%;
 }
@@ -310,7 +310,7 @@ nav .navcontainer a {
   height: 45px;
   font-size: 1.8rem;
   background: #ff7600;
-  color: #FFCE00;
+  color: white;
   border: none;
 }
 @media (max-width: 800px) {
@@ -327,7 +327,7 @@ nav .navcontainer a {
 }
 .bancontainer .container .cta-button button:hover {
   background: #FFCE00;
-  color: #ff7600;
+  color: white;
 }
 .bottom-content {
   padding: 5% 0 0 0;
@@ -396,6 +396,7 @@ nav .navcontainer a {
 @media (max-width: 800px) {
   .bottom-content .bottom-text {
     width: 100%;
+    margin: 0 0 0 5%;
   }
 }
 @media (max-width: 500px) {
@@ -673,6 +674,9 @@ footer .contact {
 footer .contact a {
   color: #666666;
   font-size: 1.6rem;
+}
+footer .contact a:hover {
+  color: #0093ff;
 }
 footer .footernav {
   display: flex;
