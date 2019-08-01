@@ -285,6 +285,7 @@ nav .navcontainer a {
 .bancontainer .container p {
   margin: 0 0 2% 0;
   color: white;
+  text-shadow: 2px 2px black;
   align-self: center;
   text-align: center;
 }
@@ -362,7 +363,7 @@ nav .navcontainer a {
 .bottom-content .image {
   width: 45%;
   height: 10%;
-  margin: 0 0 0 5%;
+  margin: 0 0 5% 5%;
 }
 @media (max-width: 800px) {
   .bottom-content .image {
@@ -670,10 +671,12 @@ footer .contact {
   }
 }
 footer .contact a {
+  color: #666666;
   font-size: 1.6rem;
 }
 footer .footernav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-self: center;
   width: 25%;

@@ -24,6 +24,7 @@ footer {
             }//end p
         }//end media
         a {
+            color: @text-color;
             font-size: 1.6rem;
         }//end a
         width: 40%;
@@ -32,10 +33,12 @@ footer {
     .footernav {
 
         @media @phone {
+
             display: none;
         }//end media
 
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-self: center;
         width: 25%;
