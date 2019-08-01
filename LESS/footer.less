@@ -23,16 +23,22 @@ footer {
                 word-wrap: break-word;
             }//end p
         }//end media
+        a {
+            color: @text-color;
+            font-size: 1.6rem;
+        }//end a
         width: 40%;
     }//end .contact
 
     .footernav {
 
         @media @phone {
+
             display: none;
         }//end media
 
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-self: center;
         width: 25%;
@@ -41,7 +47,7 @@ footer {
             
             font-size: 1.6rem;
             text-decoration: none;
-            color: @text-color;
+            color: @links-color;
             height: 50%;
             text-align: center;
             // padding: 5% 0 0 0;   

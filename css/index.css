@@ -209,9 +209,9 @@ nav .navcontainer {
   }
 }
 nav .navcontainer a {
+  color: #0093ff;
   font-size: 1.6rem;
   text-decoration: none;
-  color: #666666;
   height: 50%;
   text-align: center;
 }
@@ -285,6 +285,7 @@ nav .navcontainer a {
 .bancontainer .container p {
   margin: 0 0 2% 0;
   color: white;
+  text-shadow: 2px 2px black;
   align-self: center;
   text-align: center;
 }
@@ -362,7 +363,7 @@ nav .navcontainer a {
 .bottom-content .image {
   width: 45%;
   height: 10%;
-  margin: 0 0 0 5%;
+  margin: 0 0 5% 5%;
 }
 @media (max-width: 800px) {
   .bottom-content .image {
@@ -669,8 +670,13 @@ footer .contact {
     word-wrap: break-word;
   }
 }
+footer .contact a {
+  color: #666666;
+  font-size: 1.6rem;
+}
 footer .footernav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-self: center;
   width: 25%;
@@ -683,7 +689,7 @@ footer .footernav {
 footer .footernav a {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #666666;
+  color: #0093ff;
   height: 50%;
   text-align: center;
 }
