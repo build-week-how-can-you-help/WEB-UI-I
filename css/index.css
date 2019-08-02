@@ -417,7 +417,7 @@ nav .navcontainer a {
 }
 @media (max-width: 500px) {
   .bottom-content .bottom-text h1 {
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 }
@@ -426,13 +426,13 @@ nav .navcontainer a {
 }
 @media (max-width: 800px) {
   .bottom-content .bottom-text p {
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 }
 @media (max-width: 500px) {
   .bottom-content .bottom-text p {
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 }
